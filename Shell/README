@@ -1,0 +1,50 @@
+Victor Dang
+CIS 3207 - Lab 2
+
+———-myshell—————
+
+Description:
+myshell is a linux/unix shell written in C. It takes in commands as user input. myshell can execute any of the built in commands, as well as background process and piping. But unfortunately not redirection.
+
+Built-in Commands:
+
+Command			Description
+
+cd 			cd <directory> allows you to change working directories. Ex) cd
+			desktop will take you to the desktop directory
+
+clr			clr will clear the entire screen
+
+dir 			dir <directory> will list the contents of the current directory.
+			Ex) dir desktop will list all the contents on the desktop
+
+environ 		environ will list all the environment variables
+
+echo			echo <comment> will output the string after echo as a new string
+			with new line. Ex) echo hello will produce hello 
+
+help			help will display the README (current file you’re reading). Lists
+			all of the different commands and provides descriptions
+
+pause			pause will pause the shell until ENTER (the key) is pressed again
+
+
+quit 			quit will make the shell exit
+
+Background Execution (&):
+	When executing a command normally, the parent process will create a child process , start executing , but it will wait for the child process to terminate. In the case of a background process, it will begin the same way but the parent process will not wait for the child process to finish. 
+
+Example of background execution) 
+	
+	/Victor/Desktop/Lab2> <command/process you want running in background> &
+
+Piping :
+
+	Pipe uses asynchronous send & blocking receive operations. Pipes follow the FIFO queue style. Pipes allow you to pass contents of a file to a command to do other tasks. Basically pipes allow you to move information between different parameters and chain things together.
+
+Example of background execution)
+
+
+	/Victor/Desktop/Lab2> <parameter1> | <parameter2>
+	
+
